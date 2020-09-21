@@ -5,6 +5,6 @@
         "-g",
         "${file}",
         "-o",
-        "output/${fileBasenameNoExtension}.exe"
+        "output/test.exe"
     ]
 }
