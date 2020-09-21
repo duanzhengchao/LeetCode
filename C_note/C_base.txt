@@ -1,0 +1,4 @@
+#include< > 和 #include” ” 的区别：
+　　#include< > 引用的是 编译器的类库 路径里面的头文件。
+	一般是引用自带的一些头文件，如： stdio.h、conio.h、string.h、stdlib.h 等等。
+　　#include" " 引用的是你程序目录的相对路径中的头文件。
