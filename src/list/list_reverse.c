@@ -22,10 +22,11 @@ struct ListNode *ReverseList(struct ListNode *pHead)
     }
     return pre;
 }
-int main()
+ListNode *create_list()
 {
-    ListNode a,b,c,d,e;
+    static ListNode a,b,c,d,e;
     ListNode *head = NULL;
+
     int val = 0;
     a.next = &b;
     b.next = &c;
@@ -40,14 +41,19 @@ int main()
         val++;
         head = head->next;
     }
-    head = ReverseList(&a);
 
-    
+    return &a;
+}
+int main()
+{
+    ListNode *head = create_list();
+    head = create_list(head);
     while (head != NULL)
     {
         printf("%d\n",head->val);
         head = head->next;
     }
+    
     system("pause");
     return 0;
 
