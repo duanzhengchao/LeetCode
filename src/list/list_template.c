@@ -5,22 +5,9 @@ typedef struct ListNode
     int val;
     struct ListNode *next;
 }ListNode;
-struct ListNode *ReverseList(struct ListNode *pHead)
+void fun()
 {
-    // write code here
-    struct ListNode *pre = NULL;
-    struct ListNode *cur = pHead;
-    struct ListNode *temp = NULL;
-    while (cur != NULL)
-    {
-        temp = cur->next;
-        cur->next = pre;
-        pre = cur;
-        cur= temp;
-    
-
-    }
-    return pre;
+    return;
 }
 ListNode *create_list()
 {
@@ -47,7 +34,6 @@ ListNode *create_list()
 int main()
 {
     ListNode *head = create_list();
-    head = create_list(head);
     while (head != NULL)
     {
         printf("%d\n",head->val);
